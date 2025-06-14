@@ -233,9 +233,9 @@ def verificar_produto(vendedor):
 
 
 def verificacao_compra():
-    if verificar_cliente() == True: 
+    if verificar_cliente() and verificar_vendedor: 
         print("Verificação permitida.")
-    else: 
+    else:
         print("Verificação negada.")
         return False
 
