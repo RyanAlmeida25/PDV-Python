@@ -5,4 +5,4 @@ comissao_vendedores = [{'vendedor': 'Marcos', 'comissao': '1.33'}, {'vendedor': 
 lista_produtos = []
 vendas = [{'valor total': 26.5, 'data': '09/06/2025 19:05:01'}, {'valor total': 12.0, 'data': '20/06/2025 13:39:01'}, {'valor total': 12.0, 'data': '20/06/2025 13:51:47'}]
 imposto = [{'imposto': 6.625, 'data': '09/06/2025 19:05:20'}]
-produtos_vendidos = ['Ovos']
+produtos_vendidos = []
