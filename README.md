@@ -275,21 +275,6 @@ Exibir um relatório completo do sistema.
 
 ---
 
-## NOTAS TÉCNICAS
-
-- A função `compra()` evita duplicações de produtos no inventário, mas permite repetições do mesmo produto na mesma compra.
-- O uso de listas globais exige cuidado com a concorrência em ambientes multiusuário.
-- A função `salvar_dados()` sobrescreve `dados.py`, por isso é importante manter backups em caso de falha.
-
----
-
-## SUGESTÕES DE MELHORIA
-
-- Separar dados persistentes em arquivos `.json` ou `.csv`, eliminando dependência de sobrescrever código.
-- Implementar verificação de tipo em todos os inputs.
-- Implementar interface gráfica com bibliotecas como `Tkinter` ou `PyQt`.
-- Centralizar a verificação de código duplicado em funções utilitárias para evitar repetição de lógica.
-
 ========================================  
 FIM DA DOCUMENTAÇÃO  
 ========================================
