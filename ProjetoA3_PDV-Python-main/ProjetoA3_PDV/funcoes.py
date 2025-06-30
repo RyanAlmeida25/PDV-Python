@@ -314,13 +314,17 @@ def relatorio():
     print(f"Relatório, Data: {datetime.datetime.now().strftime('%d/%m/%Y %H:%M:%S')}: \n")
     for v in vendas:
         print(f"Data: {v['data']}, Valor total: R${v['valor total']:.2f}\n")
+
     for p in produtos:
         print(f"Produto: {p['nome']}, Código: {p['codigo']}, Valor: R${p['valor']:.2f}, Estoque: {p['estoque']}\n")
+    
     for valor in imposto:
         print(f"Data: {valor['data']}, Imposto: R${valor['imposto']:.2f}\n")
     
     print("Comissão por vendedor:\n")
+    
     for c in comissao_vendedores:
         print(f"Vendedor: {c['vendedor']}, Comissão: R${c['comissao']}\n")
+    
     produtos_vendidos.clear()
     salvar_dados()
