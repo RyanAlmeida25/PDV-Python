@@ -1,0 +1,8 @@
+clientes = [{'codigo': 123, 'nome': 'jose'}, {'codigo': 12345, 'nome': 'Antônio'}, {'codigo': 123456, 'nome': 'Lucas'}, {'codigo': 987, 'nome': 'Josefa'}]
+produtos = [{'codigo': 123, 'nome': 'Ovos', 'valor': 12.0, 'estoque': 34}, {'codigo': 321, 'nome': 'farinha', 'valor': 10.0, 'estoque': 97}, {'codigo': 1, 'nome': 'testando', 'valor': 10.0, 'estoque': 93}, {'codigo': 12345, 'nome': 'Agua', 'valor': 2.5, 'estoque': 97}]
+vendedores = [{'codigo': 12345, 'nome': 'Marcos'}, {'codigo': 123, 'nome': 'Marcondes'}]
+comissao_vendedores = [{'vendedor': 'Marcos', 'comissao': '1.33'}, {'vendedor': 'Marcondes', 'comissao': '0.60'}, {'vendedor': 'Marcondes', 'comissao': '0.60'}]
+lista_produtos = []
+vendas = [{'valor total': 26.5, 'data': '09/06/2025 19:05:01'}, {'valor total': 12.0, 'data': '20/06/2025 13:39:01'}, {'valor total': 12.0, 'data': '20/06/2025 13:51:47'}]
+imposto = [{'imposto': 6.625, 'data': '09/06/2025 19:05:20'}]
+produtos_vendidos = []
