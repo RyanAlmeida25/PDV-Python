@@ -1,0 +1,62 @@
+@startuml Diagram
+
+
+class Cliente {
+    - codigo: int
+    - nome: str
+}
+
+class Produto {
+    - codigo: int
+    - nome: str
+    - valor: float
+    - estoque: int
+}
+
+class Vendedor {
+    - codigo: int
+    - nome: str
+    - comissao: float
+}
+
+class Venda {
+    - data: datetime
+    - valor_total: float
+    - produtos: List<Produto>
+    - vendedor: Vendedor
+    + realizar_compra()
+}
+
+class Imposto {
+    - data: datetime
+    - valor: float
+}
+
+class Sistema {
+    + dados_cliente()
+    + cadastro()
+    + dados_produto()
+    + cadastro_produto()
+    + dados_vendedores()
+    + cadastro_vendedor()
+    + verificar_cliente()
+    + verificar_vendedor()
+    + verificar_produto()
+    + compra()
+    + calcular_imposto()
+    + relatorio()
+    + salvar_dados()
+}
+
+Cliente --> Sistema
+Produto --> Sistema
+Vendedor --> Sistema
+Venda --> Sistema
+Imposto --> Sistema
+Venda --> Produto : usa
+Venda --> Vendedor : realizada_por
+Venda --> Cliente : realizada_para
+Sistema --> Venda : cria
+Sistema --> Imposto : calcula
+
+@enduml
